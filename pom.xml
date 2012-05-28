@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.github.fabiojose</groupId>
+	<artifactId>concept-secdi</artifactId>
+	<version>1.0</version>
+	<packaging>jar</packaging>
+	
+	<name>Concept - Java SE CDI - Contexts and Dependecy Injection</name>
+	<url>https://github.com/fabiojose/concept-secdi</url>
+	
+	<build>
+		<sourceDirectory>${basedir}/src</sourceDirectory>
+		<outputDirectory>${basedir}/bin</outputDirectory>
+		
+		<defaultGoal>install</defaultGoal>
+		<directory>${basedir}/target</directory>
+		<finalName>${artifactId}-${version}</finalName>
+	</build>
+	
+	<dependencies>		
+		<dependency>
+		    <groupId>org.jboss.weld.se</groupId>
+		    <artifactId>weld-se</artifactId>
+		    <version>1.1.8.Final</version>
+		</dependency>
+	</dependencies>
+</project>
